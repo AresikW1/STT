@@ -40,8 +40,9 @@ public class SymbolApp extends Frame implements ActionListener {
         add(symbolPanel, BorderLayout.CENTER);
 
         // Panel for submit button
-        Panel controlPanel = new Panel(new FlowLayout());
-        submitButton = new Button("Submit");
+        Panel controlPanel = new Panel(new FlowLayout(FlowLayout.CENTER, 30, 20));
+        submitButton = new Button("Chin Tapak Dum Dum");
+        submitButton.setFont(new Font("Arial", Font.BOLD, 18));
         submitButton.addActionListener(this);
         controlPanel.add(submitButton);
         add(controlPanel, BorderLayout.SOUTH);
@@ -62,7 +63,7 @@ public class SymbolApp extends Frame implements ActionListener {
             removeAll();
             setLayout(new BorderLayout());
             Label resultLabel = new Label(selectedSymbol, Label.CENTER);
-            resultLabel.setFont(new Font("Arial", Font.BOLD, 50));
+            resultLabel.setFont(new Font("Arial", Font.BOLD, 16));
             add(resultLabel, BorderLayout.CENTER);
             validate();
             repaint();
